@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "c64fb02f-1d19-4df1-9074-8b055ee3e704",
+		"name": "TEST API",
+		"description": "version=1.0 - Description for Test API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http:///test/api/:id",
+					"host": [
+						"http:"
+					],
+					"port": "",
+					"path": [
+						"",
+						"",
+						"test",
+						"api",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Test data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http:///test/api/:id",
+							"host": [
+								"http:"
+							],
+							"port": "",
+							"path": [
+								"",
+								"",
+								"test",
+								"api",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "123456"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [],
+					"cookie": [],
+					"body": "{\n\t\"id\" : \"123456\",\n\t\"message\": \"test message\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "79a00313-58a0-4a6f-9441-544ed0bf4525",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3dcd5a65-81bc-42db-8fbb-6ef9861b6b67",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
